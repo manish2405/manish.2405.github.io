@@ -292,7 +292,7 @@ div.logryt a{
     color: rgb(7, 7, 109);
     cursor: pointer;
 }
-p#errmsg{
+form.logforms p#errmsg{
     text-align: center;
     color: rgb(223, 68, 68);
     border: 1px;
