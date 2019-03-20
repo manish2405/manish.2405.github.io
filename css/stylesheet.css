@@ -292,3 +292,11 @@ div.logryt a{
     color: rgb(7, 7, 109);
     cursor: pointer;
 }
+p#errmsg{
+    text-align: center;
+    color: rgb(223, 68, 68);
+    border: 1px;
+    background-color: rgb(226, 172, 105);
+    border-radius: 5px 5px;
+    transition: 1.0s;
+}

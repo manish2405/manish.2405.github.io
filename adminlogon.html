@@ -22,7 +22,7 @@
         <form action="" method="POST" class="logforms"  id="logform" name="logforms">
           Type Your password<br>
            <input type="password" class="pass" name="pswd">
-            <input type="button" class="bttn" onclick="check(this.form)" value="GO">
+            <input type="button" class="bttn" onclick="check(this.form)" value="GO"><p id="errmsg"></p>
             
         </form>
         <a onclick="document.logforms.pswd.value='qwerty'" >forget password?</a>
@@ -32,12 +32,17 @@
 
     <script>
 
+
+
 function check(form) {
                 if(form.pswd.value == "qwerty") {
                     window.open("window.html", "_self");
                 }
+                else if(form.pswd.value == ""){
+                    document.getElementById("errmsg").innerHTML="Please Enter Password"; 
+                }
                 else {
-                    alert("Error Password")
+                    document.getElementById("errmsg").innerHTML="Incorrect Password";
                 }
             }
 
