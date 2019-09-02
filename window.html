@@ -16,10 +16,32 @@
     </div>    
 
     <div class="calculator" id="calc">
-        <img class="mycalc" src="img/Calculator.png" alt="calculator"><p>Calculator</p>
+        <img class="mycalc" src="img/Calculator.png" alt="calculator" title="Calculator"><p>Calculator</p>
       
     </div>
 
+    <div class="main-taskbar">
+        <div class="taskbar">
+            <div class="start">
+                <button onclick="startmenu()" title="Start"><img src="img/windowslogostart.png"> Start</button>
+                <ul class="start-menu startmenu" id="startmenu">
+                    <div class="administration">
+                        <p>Manish Verma</p>
+                        <img src="img/manishimg.jpg" alt="">
+                    </div>
+                    <div class="powerbtn">
+                    <a href=""><li>Restart</li></a>
+                    <a href=""><li>Logoff</li></a>
+                    <a href=""><li>Shut down</li></a>
+                    </div>
+                </ul>   
+            </div>
+            <div class="notify-time">
+                <p>10:45 AM</p>
+            </div>
+        </div>
+    </div>
+    
 <script>
 
     var newwindow;
@@ -32,6 +54,16 @@
     }
     
     document.getElementById("calc").addEventListener("dblclick", openwin);
+
+
+    function startmenu() {
+  var x = document.getElementById("startmenu");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
     
 </script>
