@@ -31,6 +31,97 @@ div.mycomputer span{
     color: white;
     text-decoration: none;
 }
+.main-taskbar{
+    height: 0px;
+    position: relative;
+}
+.taskbar{
+    display: flex;
+    flex-flow: row;
+    background-color: rgb(87, 87, 199);
+    position: fixed;
+    bottom: 0%;
+    left: 1px;
+    height: 30px;
+    width: 100%;
+}
+.start{
+    display: flex;
+    flex-flow: row;
+}
+
+.start button{
+    width: 100px;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding: 2px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+    height: 30px;
+    border-radius: 4px 3px;
+    background-image: linear-gradient(rgb(7, 78, 7),rgb(55, 182, 93));
+}
+.start img{
+    width: 25px;
+}
+.start-menu{
+    position: absolute;
+    bottom: 15px;
+    border-radius: 4px;
+    width: 200px;
+    background-color: rgb(219, 219, 235);
+    height: 470px;
+}
+.start-menu li{
+    list-style: none;
+    padding: 5px;
+    font-size: 18px;
+    color: rgb(71, 66, 66);
+}
+.powerbtn{
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+.administration{
+    display: inline-flex;
+    background-color: rgb(110, 110, 218);
+    height: 75px;
+    position: absolute;
+    color: white;
+    left: 0px;
+    border-radius: 5px;
+    width: 100%;
+}
+.administration p{
+    position: absolute;
+    left: 10px;
+}
+.administration img{
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 50%;
+    height: 40px;
+}
+.notify-time{
+    position: fixed;
+    right: 0px;
+}
+.notify-time p{
+    background-image: linear-gradient(rgb(108, 156, 228),rgb(53, 53, 170));
+    font-size: 15px;
+    margin: 0px;
+    width: 110px;
+    border-radius: 2px 2px;
+    padding: 8px;
+    text-align: right;
+    color: rgb(216, 212, 212);
+}
 body#openmycomp{
     background-color: white;
 }
@@ -51,6 +142,11 @@ div.aside{
     display: flex;
     padding: 20px;
     flex-direction: row wrap;
+}
+.folders{
+    flex-flow: row;
+    display: inline-flex;
+    height: 20%;
 }
 .mainlocal img{
     width: 60px;
