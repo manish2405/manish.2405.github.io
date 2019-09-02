@@ -67,6 +67,9 @@ div.mycomputer span{
 .start img{
     width: 25px;
 }
+#startmenu{
+    display: none;
+}
 .start-menu{
     position: absolute;
     bottom: 15px;
