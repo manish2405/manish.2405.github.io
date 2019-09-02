@@ -304,6 +304,8 @@ body#calculator{
   body#afterload{
      
       background-color: rgb(40, 129, 231);
+      height: 0px;
+      margin: 0px;
   } 
   div.xplogo{
       text-align: center;
@@ -319,11 +321,14 @@ body#calculator{
 }
 footer.aftloadfooter{
     height: 95px;
+    margin: 0 auto;
     background-color: rgb(19, 58, 167);
 }
 
   body#logon{
       background-color: rgb(40, 129, 231);
+      height: 0%;
+      margin: 0%;
   }
   header.header{
       height: 90px;
